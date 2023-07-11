@@ -1,0 +1,107 @@
+<div style="background-color: #f7f7f7; padding: 10px">
+  <div style="background-color: white; width:770px; margin-left: auto; margin-right: auto; font-family: 'Segoe UI Light', sans-serif; color: black">
+    <div style="text-align: center;">
+      <br>
+      <p>
+        <img width="70%" src="https://lh3.googleusercontent.com/m0YDLKI9pgHHEFifCqJS9JerxwqwfNMn334_wjY2plvpaebJUXf_vh-Bh2ooxsxPUnbVIjBtydR3kxGc0K8YzKHp1vsBXdI0CTZjO1Wej4efRj_jwZm4Son9AGmEBuA8Y4ESWvvV=w2400"
+             style="display: inline-block;">
+      </p>
+      <div>
+        <h1>Statistic AGVs Operation</h1>
+        <h2><small>Customer: <%customer%> | From <%from%> to <%to%></small></h2>
+      </div>
+    </div>
+    <hr>
+    <div style="padding: 30px">
+      <h2><small>Total Error: </small><%total%><small> error(s)</small></h2>
+      <h3>Detail by errors:</h3>
+      <table width="100%" style="border-collapse: collapse;">
+        <thead style="background-color: #ff9658; color: white;">
+        <tr height="30px" style="border-bottom: 1.5px solid #8f8f8f;">
+          <th width="10%" style="text-align: left; padding-left: 10px;" scope="col">#</th>
+          <th width="30%" style="text-align: left;" scope="col">Error</th>
+          <th width="40%" style="text-align: left;" scope="col">Message</th>
+          <th width="20%" style="text-align: right; padding-right: 10px;" scope="col">Count</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- row template for detail by errors -->
+        <!--
+          <tr height="30px" style="border-bottom: 1px solid #a1a1a1;">
+            <th scope="row" width="10%" style="text-align: left; padding-left: 10px;">%index%</th>
+            <td width="30%" style="text-align: left;" scope="col">%error%</td>
+            <td width="40%" style="text-align: left;" scope="col">%message%</td>
+            <td width="20%" style="text-align: right; padding-right: 10px;" scope="col">%count% time(s)</td>
+          </tr>
+        -->
+        <%tableDetailByError%>
+        </tbody>
+      </table>
+      <br>
+      <h3>Detail by vehicles:</h3>
+      <table width="100%" style="border-collapse: collapse;">
+        <thead style="background-color: #0099dc; color: white;">
+        <tr height="30px" style="border-bottom: 1.5px solid #8f8f8f;">
+          <th width="10%" style="text-align: left; padding-left: 10px;" scope="col">#</th>
+          <th width="70%" style="text-align: left;" scope="col">Vehicle Name</th>
+          <th width="20%" style="text-align: right; padding-right: 10px;" scope="col">Count</th>
+        </tr>
+        </thead>
+        <tbody>
+        <!-- row template for detail by vehicle -->
+        <!--
+          <tr height="30px" style="border-bottom: 1px solid #a1a1a1;">
+            <th scope="row" width="10%" style="text-align: left; padding-left: 10px;">%index%</th>
+            <td width="70%" style="text-align: left;" scope="col">%vehicle%</td>
+            <td width="20%" style="text-align: right; padding-right: 10px;" scope="col">%count% time(s)</td>
+          </tr>
+        -->
+        <%tableDetailByVehicle%>
+        </tbody>
+      </table>
+      <br>
+      <p><small><i>This mail was sent automatically. Please don't reply this mail.</i></small></p>
+      <p><b> From IT Team - CFG</b></p>
+    </div>
+    <br>
+    <div>
+      <table width="100%" style="color: #7D8492; background-color: #101215; padding: 0px 10px 0px 20px; font-size: 14px;">
+        <tr>
+          <th style="width: 20%; padding-right: 15px;">
+            <div style="display: inline-block;">
+              <img src="https://lh3.googleusercontent.com/ZSJLT_mBKLuDTK2jP3FddY90W7e79jI3xRpvj0r3S08CTKzeFT8QcsuFeLcI1FkW0U7yXg2lBO90UvWB5AJfMqaahqiWX-yG0IToLU8ZYl4hYZZyvPiPZ-S3eOzqaHL_kfT372mg=w2400"
+                   style="width: 100%;">
+            </div>
+          </th>
+          <th style="text-align: left; vertical-align: top">
+            <h3 style="font-size: 16px; color: white;">HANOI OFFICE</h3>
+            <div style="padding: 0px 5px">
+              <p><b>CF Group</b></p>
+              <p><b>Tel: +84.2439741931</b></p>
+              <p><b>Email:</b> admin@cfg.vn</p>
+              <p><b>Headquarters:</b> No. 163 Ba Trieu, Hai Ba Trung, Hanoi</p>
+            </div>
+          </th>
+          <th style="text-align: left; vertical-align: top">
+            <h3 style="font-size: 16px; color: white;">SAIGON OFFICE</h3>
+            <div style="padding: 0px 5px">
+              <p><b>CF Group</b></p>
+              <p><b>Tel: +84.2439741931</b></p>
+              <p><b>Email:</b> admin@cfg.vn</p>
+              <p><b>Add:</b> 185 Ly Chinh Thang, District 3, Ho Chi Minh</p>
+            </div>
+          </th>
+          <th style="text-align: left; vertical-align: top">
+            <h3 style="font-size: 16px; color: white;">HA TINH OFFICE</h3>
+            <div style="padding: 0px 5px">
+              <p><b>CF Group</b></p>
+              <p><b>Tel: +84.2439741931</b></p>
+              <p><b>Email:</b> admin@cfg.vn</p>
+              <p><b>Add:</b> Ky Anh District, Ha Tinh Province, Vietnam</p>
+            </div>
+          </th>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

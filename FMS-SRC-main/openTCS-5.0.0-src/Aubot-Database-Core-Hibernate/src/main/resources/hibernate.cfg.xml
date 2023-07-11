@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.hbm2ddl.auto">create</property>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/fms</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">postgres</property>
+    <property name="connection.pool_size">10</property>
+
+    <mapping class="com.aubot.hibernate.entities.VehicleEntity"/>
+    <mapping class="com.aubot.hibernate.entities.VehiclePropertyEntity"/>
+    <mapping class="com.aubot.hibernate.entities.VehicleHistoryEntity"/>
+    <mapping class="com.aubot.hibernate.entities.MapPersistedEntity"/>
+    <mapping class="com.aubot.hibernate.entities.RouteEntity"/>
+    <mapping class="com.aubot.hibernate.entities.VehicleRouteHistoryEntity"/>
+    <mapping class="com.aubot.hibernate.entities.UserEntity"/>
+    <mapping class="com.aubot.hibernate.entities.UserPermissionEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,21 @@
+group 'com.aubot.agv.intergration.atc'
+version '1.0.0'
+
+apply from: "${rootDir}/gradle/java-project.gradle"
+apply from: "${rootDir}/gradle/java-artifacts.gradle"
+apply from: "${rootDir}/gradle/java-codequality.gradle"
+apply from: "${rootDir}/gradle/guice-project.gradle"
+apply from: "${rootDir}/gradle/maven-publishing.gradle"
+apply from: "${rootDir}/gradle/license-headers.gradle"
+apply plugin: 'org.kordamp.gradle.stats'
+
+dependencies {
+    compile project(':openTCS-API-Injection')
+    compile project(':openTCS-Common')
+
+    implementation group: 'com.fazecast', name: 'jSerialComm', version: '2.6.2'
+}
+
+task release {
+    dependsOn build
+}

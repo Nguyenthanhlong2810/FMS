@@ -1,0 +1,81 @@
+apply from: "${rootDir}/gradle/java-project.gradle"
+apply from: "${rootDir}/gradle/java-artifacts.gradle"
+apply from: "${rootDir}/gradle/java-codequality.gradle"
+apply from: "${rootDir}/gradle/guice-application.gradle"
+apply from: "${rootDir}/gradle/maven-publishing.gradle"
+apply plugin: 'org.kordamp.gradle.stats'
+
+if (!hasProperty('mainClass')) {
+  ext.mainClass = 'org.opentcs.guing.RunPlantOverview'
+}
+mainClassName = ext.mainClass
+
+ext.collectableDistDir = new File(buildDir, 'install')
+
+dependencies {
+  compile project(':openTCS-API-Injection')
+  compile project(':openTCS-Common')
+  compile project(':Aubot-Database-Core-Hibernate')
+  compile project(':openTCS-Impl-Configuration-cfg4j')
+  compile project(':openTCS-PlantOverview-Base')
+//  compile project(':openTCS-PlantOverview-Panel-LoadGenerator')
+//  compile project(':openTCS-PlantOverview-Panel-ResourceAllocation')
+//  compile project(':openTCS-PlantOverview-Panel-Statistics')
+  compile project(':Aubot-PlantOverview-Panel-AtcSetup')
+  compile project(':Aubot-PlantOverview-Panel-RfidSetup')
+  compile project(':openTCS-PlantOverview-Themes-Default')
+
+  compile project(':openTCS-CommAdapter-Loopback')
+  compile project(':openTCS-TCP-CommAdapter-Vehicle')
+
+  compile 'org.postgresql:postgresql:42.2.18'
+  compile group: 'com.toedter', name: 'jcalendar', version: '1.4'
+  compile group: 'org.jfree', name: 'jfreechart', version: '1.0.19'
+  // https://mvnrepository.com/artifact/org.bidib.org.oxbow/swingbits
+  compile group: 'net.coderazzi', name: 'tablefilter-swing', version: '5.5.2'
+
+  compile group: 'com.formdev', name: 'flatlaf-intellij-themes', version: '1.6.5'
+
+  // There does not seem to be an official binary release for JHotDraw...
+  compile group: 'org.opentcs.thirdparty.jhotdraw', name: 'jhotdraw', version: '7.6.20190506'
+  compileOnly group: 'org.opentcs.thirdparty.jhotdraw', name: 'jhotdraw', version: '7.6.20190506', classifier: 'sources'
+  // This preview version of Docking Frames is not in Maven Central, yet.
+  compile group: 'org.opentcs.thirdparty.dockingframes', name: 'docking-frames-common', version: '1.1.2p11'
+  compileOnly group: 'org.opentcs.thirdparty.dockingframes', name: 'docking-frames-common', version: '1.1.2p11', classifier: 'sources'
+  compile group: 'org.opentcs.thirdparty.dockingframes', name: 'docking-frames-core', version: '1.1.2p11'
+  compileOnly group: 'org.opentcs.thirdparty.dockingframes', name: 'docking-frames-core', version: '1.1.2p11', classifier: 'sources'
+  compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+  implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.3.Final'
+  implementation group: 'org.apache.poi', name: 'poi-ooxml', version: '4.1.2'
+
+  runtime group: 'org.slf4j', name: 'slf4j-jdk14', version: '1.7.21'
+}
+
+distributions {
+  main {
+    contents {
+      from "${sourceSets.main.resources.srcDirs[0]}/org/opentcs/plantoverview/distribution"
+    }
+  }
+}
+
+// For now, we're using hand-crafted start scripts, so disable the application
+// plugin's start script generation.
+startScripts.enabled = false
+
+task release {
+  dependsOn build
+  dependsOn installDist
+}
+
+run {
+  systemProperties(['java.util.logging.config.file':'./config/logging.config',\
+                    'java.security.policy':'file:./config/java.policy',\
+                    'sun.java2d.d3d':'false',\
+                    'opentcs.base':'.',\
+                    'opentcs.home':'.',\
+                    'opentcs.cfg4j.reload.interval':'10000'])
+  jvmArgs('-XX:-OmitStackTraceInFastThrow',\
+          '-splash:bin/aubot.png',\
+          '-Dfile.encoding:UTF-8')
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src" />
+        <option name="gradleJvm" value="1.8" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/Aubot-Database-Core-Hibernate" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/Aubot-Kernel-Extension-Traffic-Manager" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/Aubot-PlantOverview-Panel-AtcSetup" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/Aubot-PlantOverview-Panel-RfidSetup" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-API-Base" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-API-Injection" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-CommAdapter-Loopback" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Common" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Documentation" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Impl-Configuration-cfg4j" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Kernel" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Kernel-Extension-HTTP-Services" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Kernel-Extension-RMI-Services" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Kernel-Extension-Statistics" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-KernelControlCenter" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview-Base" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview-Panel-LoadGenerator" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview-Panel-ResourceAllocation" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview-Panel-Statistics" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-PlantOverview-Themes-Default" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-Strategies-Default" />
+            <option value="$PROJECT_DIR$/FMS-SRC-main/openTCS-5.0.0-src/openTCS-TCP-CommAdapter-Vehicle" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

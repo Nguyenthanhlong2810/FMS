@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ResourceBundleManager">
+    <file url="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-AtcSetup/src/main/resources/i18n/com/aubot/agv/integration/atc/Bundle.properties" />
+    <file url="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-AtcSetup/src/main/resources/i18n/com/aubot/agv/integration/atc/Bundle_vi.properties" />
+    <file url="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-RfidSetup/src/main/resources/i18n/com/aubot/agv/integration/rfid/Bundle.properties" />
+    <file url="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-RfidSetup/src/main/resources/i18n/com/aubot/agv/integration/rfid/Bundle_vi.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup_vi.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehicleRoutes.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehicleRoutes_vi.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/mainMenu.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/mainMenu_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous_vi.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/orderSequences.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/orderSequences_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleStateTable.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleStateTable_vi.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleView.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleView_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle_de.properties" />
+    <file url="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle_vi.properties" />
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/mainMenu.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/mainMenu_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/mainMenu_vi.properties" />
+      <base-name>mainMenu</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/orderSequences _vi.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/orderSequences.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/orderSequences_de.properties" />
+      <base-name>orderSequences</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders_vi.properties" />
+      <base-name>transportOrders</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/transportOrders_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleStateTable.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleStateTable_vi.properties" />
+      <base-name>transportOrders</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-AtcSetup/src/main/resources/i18n/com/aubot/agv/integration/atc/Bundle.properties" />
+      <file value="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-AtcSetup/src/main/resources/i18n/com/aubot/agv/integration/atc/Bundle_vi.properties" />
+      <base-name>Bundle</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-RfidSetup/src/main/resources/i18n/com/aubot/agv/integration/rfid/Bundle.properties" />
+      <file value="file://$PROJECT_DIR$/Aubot-PlantOverview-Panel-RfidSetup/src/main/resources/i18n/com/aubot/agv/integration/rfid/Bundle_vi.properties" />
+      <base-name>Bundle</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-TCP-CommAdapter-Vehicle/src/main/resources/cfg/aubot/commadapter/tcp/Bundle_vi.properties" />
+      <base-name>Bundle</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehiclePopup_vi.properties" />
+      <base-name>vehiclePopup</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleView.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleView_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/panels/vehicleView_vi.properties" />
+      <base-name>vehicleView</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous_de.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/miscellaneous_vi.properties" />
+      <base-name>miscellaneous</base-name>
+    </custom-resource-bundle>
+    <custom-resource-bundle>
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehicleRoutes.properties" />
+      <file value="file://$PROJECT_DIR$/openTCS-PlantOverview/src/main/resources/org/opentcs/guing/res/symbols/dialogs/vehicleRoutes_vi.properties" />
+      <base-name>vehicleRoutes</base-name>
+    </custom-resource-bundle>
+  </component>
+</project>

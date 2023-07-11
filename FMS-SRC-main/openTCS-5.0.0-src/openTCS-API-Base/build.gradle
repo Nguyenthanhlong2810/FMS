@@ -1,0 +1,15 @@
+apply from: "${rootDir}/gradle/java-project.gradle"
+apply from: "${rootDir}/gradle/java-artifacts.gradle"
+apply from: "${rootDir}/gradle/java-codequality.gradle"
+apply from: "${rootDir}/gradle/maven-publishing.gradle"
+apply from: "${rootDir}/gradle/license-headers.gradle"
+apply plugin: 'org.kordamp.gradle.stats'
+
+dependencies {
+  implementation group: 'javax.persistence', name: 'javax.persistence-api', version: '2.2'
+  implementation 'org.projectlombok:lombok:1.18.16'
+}
+
+task release {
+  dependsOn build
+}

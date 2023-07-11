@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/aubot-fms-2</property>
+    <property name="connection.username">postgres</property>
+    <property name="connection.password">123456</property>
+    <property name="show_sql">true</property>
+
+    <mapping class="org.opentcs.hibernate.entities.VehicleEntity"/>
+    <mapping class="org.opentcs.hibernate.entities.VehiclePropertyEntity"/>
+    <mapping class="org.opentcs.hibernate.entities.VehicleHistoryEntity"/>
+    <mapping class="org.opentcs.hibernate.entities.MapPersistedEntity"/>
+    <mapping class="org.opentcs.hibernate.entities.RouteEntity"/>
+    <mapping class="org.opentcs.hibernate.entities.VehicleRouteHistoryEntity"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>

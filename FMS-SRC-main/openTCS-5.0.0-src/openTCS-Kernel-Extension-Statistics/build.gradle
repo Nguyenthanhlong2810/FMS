@@ -1,0 +1,20 @@
+apply from: "${rootDir}/gradle/java-project.gradle"
+apply from: "${rootDir}/gradle/java-artifacts.gradle"
+apply from: "${rootDir}/gradle/java-codequality.gradle"
+apply from: "${rootDir}/gradle/guice-project.gradle"
+apply from: "${rootDir}/gradle/maven-publishing.gradle"
+apply from: "${rootDir}/gradle/license-headers.gradle"
+apply plugin: 'org.kordamp.gradle.stats'
+
+dependencies {
+  compile project(':openTCS-API-Injection')
+  compile project(':openTCS-Common')
+  compile 'org.postgresql:postgresql:42.2.18'
+  implementation 'org.jetbrains:annotations:19.0.0'
+  implementation group: 'org.hibernate', name: 'hibernate-core', version: '5.6.3.Final'
+
+}
+
+task release {
+  dependsOn build
+}

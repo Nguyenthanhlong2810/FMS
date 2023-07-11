@@ -1,0 +1,85 @@
+<div style="background-color: #f5f5f5; padding: 10px;">
+    <div style="background-color: white; width:770px; margin-left: auto; margin-right: auto; font-family: 'Segoe UI Light', sans-serif;">
+        <div style="text-align: center;">
+            <br>
+            <p>
+                <img width="70%" src="https://lh3.googleusercontent.com/QcvOXzTX17auM2Asv7BVhe0wOgKz-aC6TYwkc00mvcwbavUxW13tie8VBdkH-Xyu564hmw2thgiGiEl4MdeKLnmD10uRgZcTIEa3K2DhDFzfbGFJv7mPcgkvi1Ks8ckG-HlHW-f8IDzOSzbOgp9LzbqYSnpKOAsUVwup8EBAGKua3FwoVXhhwEjUrvO72aXYq4lpVbIKKbNvx-gYYeQXODAKpDweo9ytvS_896_me3or7VfwhSfLlzzXAN5Oj9TrYStM-gO-viz6P3iQcEr0XMV988eEZ2KgAhbvJ9Ym4mX-2WJIQx8lMd83W1B6DAjhx1EOC99aXCj8DD9XkIzRWTPydgg19dE4E_SDCd7SvWpVKGuPP1qjK1Cx-S8eUayQwfXldXURh7BfxtrwBT3QG0tAg13sPEVmyOlghOGZUiGfRP2QzQ599-wlKBIK4gte2VSTetfUqBkIRitajdVoyhGizGi0rjV3Ef2MwnDDLd1OJnj1l2sE0oq8Z73XZZEulJz0f-Dl8ATyYAHAJ18y7OtoQhKHt6Eind4oNM819N2jlHxvcQSpzsZ0gwJ4b0Iy5Zpc3BQjtxA_iixJvIUF0EhXZFUuzUaVhD6453XaPaVULiO3q8wURq3owJLrlrTlYRI32iGU6ATok0IW7yPF_BxXCTRRn714M25Oc0Sxgx7dEv7rsEbyHfVgLxM=w1100-h400-no?authuser=5"
+                     style="display: inline-block;">
+            </p>
+            <div>
+                <h1>Statistic AGVs Operation - Details</h1>
+                <h2><small>Customer: <%customer%> | From <%from%> to <%to%></small></h2>
+            </div>
+        </div>
+        <hr>
+        <div style="padding: 30px">
+            <h2><small>Total Error: </small><%total%><small> error(s)</small></h2>
+            <h3>Details:</h3>
+            <table width="100%" style="border-collapse: collapse;">
+                <thead style="background-color: #ff9658; color: white;">
+                <tr height="30px" style="border-bottom: 1.5px solid #8f8f8f;">
+                    <th width="15%" style="text-align: left; padding-left: 10px;" scope="col">Vehicle</th>
+                    <th width="20%" style="text-align: left;" scope="col">Error</th>
+                    <th width="35%" style="text-align: left;" scope="col">Message</th>
+                    <th width="30%" style="text-align: right; padding-right: 10px;" scope="col">Time</th>
+                </tr>
+                </thead>
+                <tbody>
+                <!-- row template for detail by errors -->
+                <!--
+                  <tr height="30px" style="border-bottom: 1px solid #a1a1a1;">
+                    <th colspan="<%byVehicle%>" scope="row" width="10%" style="text-align: left; padding-left: 10px;"><%vehicle%></th>
+                    <td style="text-align: left;" scope="col"><%error%></td>
+                    <td style="text-align: left;" scope="col"><%message%></td>
+                    <td style="text-align: right; padding-right: 10px;" scope="col"><%datetime%> time(s)</td>
+                  </tr>
+                -->
+                <%tableDetailError%>
+                </tbody>
+            </table>
+            <br>
+            <p><small><i>This mail was sent automatically. Please don't reply this mail.</i></small></p>
+            <p><b> From IT Team - CFG</b></p>
+        </div>
+        <br>
+        <div>
+            <table width="100%" style="color: #7D8492; background-color: #101215; padding: 0px 10px 0px 20px; font-size: 16px;">
+                <tr>
+                    <th style="width: 20%; padding-right: 15px;">
+                        <div style="display: inline-block;">
+                            <img src="https://lh3.googleusercontent.com/E8N__kSo6elTz661vB9XcceD3n6aY58TNJnN5iIAg6W_-qxc9UN-j_zeBxcaxXHZjLrWfWnNPm12kLvCW9mZmEKhoRZiovTWPOygbhmlcAK8vDiZFMeMIvT6MxrBA2E9342v55tEcGoPXOIu-OsZiIa8uFtqKY_Gi5_KOn5SMlLFpVzEQhIuiL2Y1HP0QGrc4k2A-LHnPr4BASfnpPs_X-54pRMb1rEbwlX8-YEmIHZ0oFVac1GCP0XJ5zYuyqjfSuzVE57H9cGPmlFVZlFRyq0TYCLu2B20j-yyc92OjCd0aykNmax4UnTZGZ7PG8doN258Xg6CP6lFocgoGcIDZZA4TyGah-co7VepH3-IGUMyqW0bIn7-JaRcqCkdBV1jxkqA9rpSMMKh2_tp-U-pvRa2RgAvWlshHo8dc2uk4MqsXGTMe7VtrdjZLZCYCWs1wFQrfGVEVZ7MQOvwhnraxqVLX1S_wS7OoDQOMC3JNF3TvloZ-0b1-9RYAR8t0yj4_sbcE5aVcT2eXaiF6pYcZLYKVcTa5iB_nkA1WJH3PDMmdL1mnzB9Uww9JBneGYNA8bfBrtDjr6-cboL2KJJNyXEVW62ifTi56_8iq_gHEy0s3NrNc-E66FTz4qb3SFF-VA5VRsD3wwaT4JTlE8RdfpCzjloW9QmKaHkLn75n2KfquC6rRuxBKuMKPvw=w160-h74-no?authuser=5"
+                                 style="width: 100%;">
+                        </div>
+                    </th>
+                    <th style="text-align: left; vertical-align: top">
+                        <h3 style="font-size: 18px; color: white;">HANOI OFFICE</h3>
+                        <div style="padding: 0px 5px">
+                            <p><b>CF Group</b></p>
+                            <p><b>Tel: +84.2439741931</b></p>
+                            <p><b>Email:</b> admin@cfg.vn</p>
+                            <p><b>Headquarters:</b> No. 163 Ba Trieu, Hai Ba Trung, Hanoi</p>
+                        </div>
+                    </th>
+                    <th style="text-align: left; vertical-align: top">
+                        <h3 style="font-size: 18px; color: white;">SAIGON OFFICE</h3>
+                        <div style="padding: 0px 5px">
+                            <p><b>CF Group</b></p>
+                            <p><b>Tel: +84.2439741931</b></p>
+                            <p><b>Email:</b> admin@cfg.vn</p>
+                            <p><b>Add:</b> 185 Ly Chinh Thang, District 3, Ho Chi Minh</p>
+                        </div>
+                    </th>
+                    <th style="text-align: left; vertical-align: top">
+                        <h3 style="font-size: 18px; color: white;">HA TINH OFFICE</h3>
+                        <div style="padding: 0px 5px">
+                            <p><b>CF Group</b></p>
+                            <p><b>Tel: +84.2439741931</b></p>
+                            <p><b>Email:</b> admin@cfg.vn</p>
+                            <p><b>Add:</b> Ky Anh District, Ha Tinh Province, Vietnam</p>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
